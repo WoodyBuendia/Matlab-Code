@@ -1,6 +1,10 @@
 %处理FDTD仿真目标点附近二维平面电场数据
+clc
+clear
 
 load Ez_2D
+%data formate:Ez_2D{Ez_2D_1[x,y,z,Ez(t)];Ez_2D_2[x,y,z,Ez(t)]
+
 %%
 [Lx_1,Ly_1,Lz_1,n_1] = size(Ez_2D_1);
 [Lx_2,Ly_2,Lz_2,n_2] = size(Ez_2D_2);
